@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Resolving</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <div class="container">
+      <div class="jumbotron">
+        Crypto Currency Converter
+      </div>
+      <div class="row" >
+        <div class="col-md-4">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#" ui-sref='converter'>Steem-->ETH</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <div ui-view>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
